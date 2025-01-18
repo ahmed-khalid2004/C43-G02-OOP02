@@ -4,15 +4,16 @@
     {
         static void Main(string[] args)
         {
+
             #region Q1
-            //Person[] persons = new Person[3]
+            //Person[] person = new Person[3]
             //{
             //new Person { Name = "Ahmed", Age = 20 },
             //new Person { Name = "Khalid", Age = 40 },
             //new Person { Name = "Aliaa", Age = 30 }
             //};
-            //Console.WriteLine("Details of persons:");
-            //foreach (var person in persons)Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+            //Console.WriteLine("Details of persons: ");
+            //for (int i = 0; i < 3; i++) Console.WriteLine($"Name: {person[i].Name}, Age: {person[i].Age}");
             #endregion
 
             #region Q2
@@ -20,25 +21,23 @@
             //Point p1 = new Point { X = double.Parse(Console.ReadLine()), Y = double.Parse(Console.ReadLine()) };
             //Console.WriteLine("Enter Point 2:");
             //Point p2 = new Point { X = double.Parse(Console.ReadLine()), Y = double.Parse(Console.ReadLine()) };
-            //double d = Math.Sqrt(Math.Pow(p2.X - p1.X, 2) + Math.Pow(p2.Y - p1.Y, 2));
+            //double d = Math.Sqrt(((p2.X - p1.X) * (p2.X - p1.X)) + ((p2.Y - p1.Y) * (p2.Y - p1.Y)));
             //Console.WriteLine($"The distance between the points is: {d:F}");
             #endregion
 
             #region Q3
-            //Person[] persons = new Person[3];
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    Console.WriteLine($"Enter Name and Age for Person {i + 1}:");
-            //    persons[i].Name = Console.ReadLine();
-            //    persons[i].Age = int.Parse(Console.ReadLine());
-            //}
-            //Person old = persons[0];
-            //foreach (var person in persons)
-            //{
-            //    if (person.Age > old.Age)
-            //        old = person;
-            //}
-            //Console.WriteLine($"The oldest person is {old.Name}, Age: {old.Age}");
+            Person[] person = new Person[3];
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine($"Enter Name and Age for Person {i + 1}:");
+                person[i].Name = Console.ReadLine();
+                person[i].Age = int.Parse(Console.ReadLine());
+            }
+            Person old = person[0];
+            for (int i = 0; i < 3; i++)
+                if (person[i].Age > old.Age)
+                    old = person[i];
+            Console.WriteLine($"The oldest person is {old.Name} And his age: {old.Age}");
             #endregion
 
             #region Q4

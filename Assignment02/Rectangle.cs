@@ -15,7 +15,7 @@ namespace Assignment02
             get { return width; }
             set
             {
-                if (value < 0)Console.WriteLine("Width cannot be negative.");
+                if (value < 0)Console.WriteLine("Width should not be negative.");
                 else width = value; 
             }
         }
@@ -24,7 +24,7 @@ namespace Assignment02
             get { return height; }
             set
             {
-                if (value < 0)Console.WriteLine("Height cannot be negative.");
+                if (value < 0)Console.WriteLine("Height should not be negative.");
                 else height = value;
             }
         }
@@ -34,7 +34,7 @@ namespace Assignment02
         }
         public void Display()
         {
-            Console.WriteLine($"Rectangle dimensions: Width = {width}, Height = {height}, Area = {Area}");
+            Console.WriteLine($"Width = {width}, Height = {height}, Area = {Area}");
         }
     }
 }

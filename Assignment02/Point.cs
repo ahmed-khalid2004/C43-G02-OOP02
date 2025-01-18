@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    internal class Point
+     class Point
     {
         public double X { get; set; }
         public double Y { get; set; }
