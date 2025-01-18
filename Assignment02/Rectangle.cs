@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    internal class Rectangle
+     class Rectangle
     {
         private double width;
         private double height;
+
         public double Width
         {
             get { return width; }

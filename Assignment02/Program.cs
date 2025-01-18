@@ -1,6 +1,6 @@
 ﻿namespace Assignment02
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
@@ -26,18 +26,18 @@
             #endregion
 
             #region Q3
-            Person[] person = new Person[3];
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine($"Enter Name and Age for Person {i + 1}:");
-                person[i].Name = Console.ReadLine();
-                person[i].Age = int.Parse(Console.ReadLine());
-            }
-            Person old = person[0];
-            for (int i = 0; i < 3; i++)
-                if (person[i].Age > old.Age)
-                    old = person[i];
-            Console.WriteLine($"The oldest person is {old.Name} And his age: {old.Age}");
+            //Person[] person = new Person[3];
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Enter Name and Age for Person {i + 1}:");
+            //    person[i].Name = Console.ReadLine();
+            //    person[i].Age = int.Parse(Console.ReadLine());
+            //}
+            //Person old = person[0];
+            //for (int i = 0; i < 3; i++)
+            //    if (person[i].Age > old.Age)
+            //        old = person[i];
+            //Console.WriteLine($"The oldest person is {old.Name} And his age: {old.Age}");
             #endregion
 
             #region Q4
